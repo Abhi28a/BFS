@@ -21,8 +21,15 @@ def register(request):
         user.set_password(password)
         user.save()
 
+        response = redirect('loginpage')
+        response.set_cookie('username', username)
+        response.set_cookie('mail', mail)
+
+
         return redirect('loginpage')
     return render(request,"register.html")
+
+from django.http import HttpResponse
 
 def loginpage(request):
     if request.user.is_authenticated:
@@ -33,10 +40,16 @@ def loginpage(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('home')
+
+            # Set the cookie with the username and status
+            response = redirect('home')
+            response.set_cookie('username',username)
+            response.set_cookie('status',True)
+            return response
         else:
             pass
     return render(request,"login.html")
+
 
 def logout(request):
     auth.logout(request)

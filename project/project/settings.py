@@ -146,3 +146,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_HOST_USER = 'abhisheksaggam@outlook.com'
 # EMAIL_HOST_PASSWORD = 'Arysjohn@2003'
 
+SESSION_COOKIE_AGE=70
+SESSION_SAVE_EVERY_REQUEST=True
+
