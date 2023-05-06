@@ -25,7 +25,7 @@ urlpatterns = [
     path('eduloan', eduloan, name="Eloan"),
     path('goldloan', goldloan, name="Gloan"),
     path('personalloan', personalloan, name="Ploan"),
-    # path('uploadSection',upload,name='upload'),
+    path('uploadSection',upload,name='upload'),
     path('success', smsg, name="smsg"),
     path('crypto', crypto, name='crypto'),
 

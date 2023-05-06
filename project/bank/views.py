@@ -214,17 +214,19 @@ def tc(request):
 def smsg(request):
     return render(request,"success_msg.html")
 
-# def upload(request):
-#     if request.method == 'POST':
-#         customer = CustomerDocx(request.POST, request.FILES)
-#         if customer.is_valid():
-#             handle_uploaded_file(request.FILES['Aadhar'])
-#             handle_uploaded_file(request.FILES['PAN'])
-#             return redirect('smsg')
-#     else:
-#         customer = CustomerDocx()
-#         return redirect('smsg')
-#     return render(request,"upload.html",{'customer':customer})
+def upload(request):
+    if request.method == 'POST':
+        username=request.POST['username']
+        aadhar=request.FILES['aadhar']
+        pan=request.FILES['pan']
+        u=Uploaded_Documents()
+        u.username=username
+        u.aadhar=aadhar
+        u.pan=pan
+        u.save()
+        return redirect('smsg')
+    return render(request,"upload.html")
+
 
 
 def crypto(request):
