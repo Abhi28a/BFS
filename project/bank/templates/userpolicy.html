@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Userpolicy</title>
+  <!-- Favicons -->
+  <link href="static/features1/assets/img/favicon.png" rel="icon">
+  <link href="static/features1/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/features1/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/features1/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/features1/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/features1/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/features1/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/features1/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/features1/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="static/features1/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/features1/assets/css/style.css" rel="stylesheet">
+  <style>
+    path {
+  stroke: #fff;
+  stroke-width: 5;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 2000;
+}
+
+/* Animate the path elements */
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Apply the animation to the opening path element */
+.opening {
+  animation: draw 20s ease forwards infinite;
+}
+.button {
+  border-radius: 4px;
+  background-color: #fff;
+  float:left;
+  justify-content: center;
+  border: none;
+  color: #fbc99d;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+  </style>
+</head>
+
+<body>
+<!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">KL Bank</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a href="blog.html">Blog</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animate__animated animate__fadeInDown">
+            <svg width="1017.3049560546874px" height="189.87250976562498px" xmlns="http://www.w3.org/2000/svg" viewBox="-258.6524780273437 -19.93625488281249 1017.3049560546874 189.87250976562498" style="background: rgba(0, 0, 0, 0);" preserveAspectRatio="xMidYMid"><defs><filter id="editing-hole" x="-100%" y="-100%" width="300%" height="300%"><feFlood flood-color="#000" result="black"></feFlood><feMorphology operator="dilate" radius="2" in="SourceGraphic" result="erode"></feMorphology><feGaussianBlur in="erode" stdDeviation="4" result="blur"></feGaussianBlur><feOffset in="blur" dx="2" dy="2" result="offset"></feOffset><feComposite operator="atop" in="offset" in2="black" result="merge"></feComposite><feComposite operator="in" in="merge" in2="SourceGraphic" result="inner-shadow"></feComposite></filter></defs><g filter="url(#editing-hole)"><g transform="translate(-115.62001943588257, 115.0625)"><path class="opening" d="M3.85-15.84L3.85-15.84L3.85-15.84Q3.85-20.01 4.92-25.36L4.92-25.36L13.59-70.62L37.24-70.62L28.68-25.04L28.68-25.04Q27.71-20.01 27.71-16.32L27.71-16.32L27.71-16.32Q27.71-12.63 29.26-10.70L29.26-10.70L29.26-10.70Q30.82-8.77 33.70-8.77L33.70-8.77L33.70-8.77Q36.59-8.77 38.41-9.52L38.41-9.52L38.41-9.52Q40.23-10.27 41.73-12.09L41.73-12.09L41.73-12.09Q44.62-15.73 46.44-25.04L46.44-25.04L55.10-70.62L71.26-70.62L62.70-25.14L62.70-25.14Q59.71-9.95 51.47-3.85L51.47-3.85L51.47-3.85Q43.44 2.14 27.61 2.14L27.61 2.14L27.61 2.14Q15.73 2.14 9.42-3.00L9.42-3.00L9.42-3.00Q3.85-7.49 3.85-15.84ZM105.39-37.56L105.39-37.56L105.39-37.56Q106.89-41.52 106.89-44.94L106.89-44.94L106.89-44.94Q106.89-51.25 101.76-51.25L101.76-51.25L101.76-51.25Q99.08-51.25 96.89-48.85L96.89-48.85L96.89-48.85Q94.69-46.44 94.69-43.44L94.69-43.44L94.69-43.44Q94.69-41.30 96.41-39.59L96.41-39.59L96.41-39.59Q98.87-37.24 105.18-33.38L105.18-33.38L105.18-33.38Q111.49-29.53 113.90-26.38L113.90-26.38L113.90-26.38Q116.31-23.22 116.31-18.89L116.31-18.89L116.31-18.89Q116.31-14.55 114.22-10.59L114.22-10.59L114.22-10.59Q112.14-6.63 108.39-3.85L108.39-3.85L108.39-3.85Q100.37 2.14 87.53 2.14L87.53 2.14L87.53 2.14Q80.57 2.14 75.22-1.50L75.22-1.50L75.22-1.50Q69.87-5.03 69.87-9.20L69.87-9.20L69.87-9.20Q69.87-13.38 72.92-15.84L72.92-15.84L72.92-15.84Q75.97-18.30 80.46-18.30L80.46-18.30L80.46-18.30Q84.96-18.30 87.74-16.59L87.74-16.59L87.74-16.59Q86.35-13.05 86.35-10.70L86.35-10.70L86.35-10.70Q86.35-3.64 92.34-3.64L92.34-3.64L92.34-3.64Q94.91-3.64 96.62-5.24L96.62-5.24L96.62-5.24Q98.33-6.85 98.33-9.63L98.33-9.63L98.33-9.63Q98.33-15.09 89.13-20.86L89.13-20.86L89.13-20.86Q81.64-25.79 79.93-27.71L79.93-27.71L79.93-27.71Q77.04-31.14 77.04-35.42L77.04-35.42L77.04-35.42Q77.04-39.70 79.07-43.76L79.07-43.76L79.07-43.76Q81.11-47.83 84.85-50.72L84.85-50.72L84.85-50.72Q92.66-56.71 106.25-56.71L106.25-56.71L106.25-56.71Q113.21-56.71 117.33-53.93L117.33-53.93L117.33-53.93Q121.44-51.15 121.44-46.44L121.44-46.44L121.44-46.44Q121.44-41.73 118.61-39.05L118.61-39.05L118.61-39.05Q115.77-36.38 110.64-36.38L110.64-36.38L110.64-36.38Q107.11-36.38 105.39-37.56ZM168.74-18.08L168.74-18.08L168.74-18.08Q171.41-16.26 171.41-12.25L171.41-12.25L171.41-12.25Q171.41-8.24 169.38-5.67L169.38-5.67L169.38-5.67Q167.35-3.10 164.03-1.39L164.03-1.39L164.03-1.39Q157.18 2.14 149.80 2.14L149.80 2.14L149.80 2.14Q142.42 2.14 138.08 0.54L138.08 0.54L138.08 0.54Q133.75-1.07 130.86-4.07L130.86-4.07L130.86-4.07Q125.19-9.74 125.19-20.12L125.19-20.12L125.19-20.12Q125.19-36.27 133.96-46.12L133.96-46.12L133.96-46.12Q143.38-56.71 159.75-56.71L159.75-56.71L159.75-56.71Q169.92-56.71 174.94-52.43L174.94-52.43L174.94-52.43Q178.69-49.22 178.69-43.98L178.69-43.98L178.69-43.98Q178.69-25.14 146.16-25.14L146.16-25.14L146.16-25.14Q145.73-22.36 145.73-20.01L145.73-20.01L145.73-20.01Q145.73-15.09 147.93-13.21L147.93-13.21L147.93-13.21Q150.12-11.34 154.19-11.34L154.19-11.34L154.19-11.34Q158.25-11.34 162.59-13.21L162.59-13.21L162.59-13.21Q166.92-15.09 168.74-18.08ZM146.91-29.75L146.91-29.75L146.91-29.75Q154.51-29.75 158.90-34.45L158.90-34.45L158.90-34.45Q163.28-38.95 163.28-46.12L163.28-46.12L163.28-46.12Q163.28-48.58 162.37-49.92L162.37-49.92L162.37-49.92Q161.46-51.25 159.64-51.25L159.64-51.25L159.64-51.25Q157.83-51.25 156.27-50.56L156.27-50.56L156.27-50.56Q154.72-49.86 153.12-47.51L153.12-47.51L153.12-47.51Q149.16-42.16 146.91-29.75ZM215.82-30.07L215.82-30.07L215.82-30.07Q219.67-36.91 219.67-43.87L219.67-43.87L219.67-43.87Q219.67-48.47 216.35-48.47L216.35-48.47L216.35-48.47Q213.79-48.47 211.11-44.08L211.11-44.08L211.11-44.08Q208.33-39.70 207.47-34.03L207.47-34.03L201.91 0L179.76 2.14L190.67-54.57L208.33-56.71L206.40-45.90L206.40-45.90Q211.65-56.71 223.42-56.71L223.42-56.71L223.42-56.71Q229.62-56.71 232.99-53.50L232.99-53.50L232.99-53.50Q236.36-50.29 236.36-43.71L236.36-43.71L236.36-43.71Q236.36-37.13 232.03-32.96L232.03-32.96L232.03-32.96Q227.70-28.78 220.31-28.78L220.31-28.78L220.31-28.78Q217.10-28.78 215.82-30.07ZM301.95-71.37L301.95-71.37L301.95-71.37Q328.17-71.37 328.17-52.86L328.17-52.86L328.17-52.86Q328.17-42.69 321.64-36.59L321.64-36.59L321.64-36.59Q315.22-30.50 303.99-30.50L303.99-30.50L303.99-30.50Q298.74-30.50 294.68-33.49L294.68-33.49L294.68-33.49Q292.75-34.77 291.47-36.49L291.47-36.49L291.47-36.49Q299.28-36.49 303.40-41.25L303.40-41.25L303.40-41.25Q307.52-46.01 307.52-55.32L307.52-55.32L307.52-55.32Q307.52-64.63 298.32-64.63L298.32-64.63L295.75-64.63L295.75-64.63Q295.11-64.63 294.57-64.52L294.57-64.52L282.27 0L259.05 0L272.21-70.08L272.21-70.08Q283.66-71.16 290.29-71.26L290.29-71.26L290.29-71.26Q296.93-71.37 301.95-71.37ZM352.03 2.14L352.03 2.14L352.03 2.14Q328.49 2.14 328.49-20.01L328.49-20.01L328.49-20.01Q328.49-35.74 337.16-45.90L337.16-45.90L337.16-45.90Q346.36-56.71 362.30-56.71L362.30-56.71L362.30-56.71Q373.86-56.71 379.74-51.36L379.74-51.36L379.74-51.36Q385.63-46.01 385.63-34.77L385.63-34.77L385.63-34.77Q385.63-17.66 376.43-7.70L376.43-7.70L376.43-7.70Q367.44 2.14 352.03 2.14ZM354.81-44.41L354.81-44.41L354.81-44.41Q353.53-41.52 352.51-37.18L352.51-37.18L352.51-37.18Q351.50-32.85 350.21-26.00L350.21-26.00L350.21-26.00Q348.93-19.15 348.93-10.70L348.93-10.70L348.93-10.70Q348.93-7.92 349.84-6.10L349.84-6.10L349.84-6.10Q350.75-4.28 353.21-4.28L353.21-4.28L353.21-4.28Q355.67-4.28 357.22-5.46L357.22-5.46L357.22-5.46Q358.77-6.63 359.95-9.42L359.95-9.42L359.95-9.42Q362.09-14.34 363.80-23.49L363.80-23.49L363.80-23.49Q365.51-32.63 365.67-36.59L365.67-36.59L365.67-36.59Q365.83-40.55 365.83-43.50L365.83-43.50L365.83-43.50Q365.83-46.44 364.98-48.36L364.98-48.36L364.98-48.36Q364.12-50.29 361.71-50.29L361.71-50.29L361.71-50.29Q359.31-50.29 357.70-48.79L357.70-48.79L357.70-48.79Q356.10-47.29 354.81-44.41ZM417.51-5.88L417.51-5.88L417.51-5.88Q414.20 2.14 403.60 2.14L403.60 2.14L403.60 2.14Q398.25 2.14 394.83-1.60L394.83-1.60L394.83-1.60Q392.05-4.71 392.05-8.24L392.05-8.24L392.05-8.24Q392.05-16.26 395.79-33.81L395.79-33.81L403.60-74.90L425.32-77.04L414.95-22.90L414.95-22.90Q413.13-14.98 413.13-12.20L413.13-12.20L413.13-12.20Q413.13-6.10 417.51-5.88ZM452.29-5.88L452.29-5.88L452.29-5.88Q448.97 2.14 438.38 2.14L438.38 2.14L438.38 2.14Q432.92 2.14 429.50-1.60L429.50-1.60L429.50-1.60Q426.61-4.92 426.61-8.24L426.61-8.24L426.61-8.24Q426.61-16.91 430.57-33.81L430.57-33.81L434.53-54.57L456.25-56.71L449.72-22.90L449.72-22.90Q447.90-14.98 447.90-12.20L447.90-12.20L447.90-12.20Q447.90-6.10 452.29-5.88ZM436.45-69.44L436.45-69.44L436.45-69.44Q436.45-73.62 439.93-75.86L439.93-75.86L439.93-75.86Q443.41-78.11 448.44-78.11L448.44-78.11L448.44-78.11Q453.47-78.11 456.52-75.86L456.52-75.86L456.52-75.86Q459.56-73.62 459.56-69.44L459.56-69.44L459.56-69.44Q459.56-65.27 456.19-63.13L456.19-63.13L456.19-63.13Q452.82-60.99 447.80-60.99L447.80-60.99L447.80-60.99Q442.77-60.99 439.61-63.13L439.61-63.13L439.61-63.13Q436.45-65.27 436.45-69.44ZM513.92-44.51L513.92-44.51L513.92-44.51Q513.92-40.02 510.18-37.24L510.18-37.24L510.18-37.24Q506.43-34.45 500.33-34.45L500.33-34.45L500.33-34.45Q497.76-34.45 496.27-35.20L496.27-35.20L496.27-35.20Q497.44-37.98 497.82-41.46L497.82-41.46L497.82-41.46Q498.19-44.94 498.19-45.90L498.19-45.90L498.19-45.90Q498.19-50.40 495.09-50.40L495.09-50.40L495.09-50.40Q492.95-50.40 490.54-47.72L490.54-47.72L490.54-47.72Q488.13-45.05 486.10-40.87L486.10-40.87L486.10-40.87Q481.61-31.24 481.61-21.51L481.61-21.51L481.61-21.51Q481.61-16.16 483.64-13.75L483.64-13.75L483.64-13.75Q485.67-11.34 490.17-11.34L490.17-11.34L490.17-11.34Q496.37-11.34 501.30-16.48L501.30-16.48L501.30-16.48Q502.69-18.08 503.44-19.90L503.44-19.90L503.44-19.90Q507.50-17.76 507.50-11.88L507.50-11.88L507.50-11.88Q507.50-5.88 500.87-1.93L500.87-1.93L500.87-1.93Q494.02 2.14 483.11 2.14L483.11 2.14L483.11 2.14Q461.38 2.14 461.38-20.86L461.38-20.86L461.38-20.86Q461.38-37.66 470.91-47.29L470.91-47.29L470.91-47.29Q480.11-56.71 497.01-56.71L497.01-56.71L497.01-56.71Q513.92-56.71 513.92-44.51ZM542.49-5.88L542.49-5.88L542.49-5.88Q539.17 2.14 528.58 2.14L528.58 2.14L528.58 2.14Q523.12 2.14 519.70-1.60L519.70-1.60L519.70-1.60Q516.81-4.92 516.81-8.24L516.81-8.24L516.81-8.24Q516.81-16.91 520.77-33.81L520.77-33.81L524.73-54.57L546.45-56.71L539.92-22.90L539.92-22.90Q538.10-14.98 538.10-12.20L538.10-12.20L538.10-12.20Q538.10-6.10 542.49-5.88ZM526.65-69.44L526.65-69.44L526.65-69.44Q526.65-73.62 530.13-75.86L530.13-75.86L530.13-75.86Q533.61-78.11 538.64-78.11L538.64-78.11L538.64-78.11Q543.67-78.11 546.72-75.86L546.72-75.86L546.72-75.86Q549.77-73.62 549.77-69.44L549.77-69.44L549.77-69.44Q549.77-65.27 546.40-63.13L546.40-63.13L546.40-63.13Q543.02-60.99 538.00-60.99L538.00-60.99L538.00-60.99Q532.97-60.99 529.81-63.13L529.81-63.13L529.81-63.13Q526.65-65.27 526.65-69.44ZM594.92-18.08L594.92-18.08L594.92-18.08Q597.59-16.26 597.59-12.25L597.59-12.25L597.59-12.25Q597.59-8.24 595.56-5.67L595.56-5.67L595.56-5.67Q593.53-3.10 590.21-1.39L590.21-1.39L590.21-1.39Q583.36 2.14 575.98 2.14L575.98 2.14L575.98 2.14Q568.60 2.14 564.26 0.54L564.26 0.54L564.26 0.54Q559.93-1.07 557.04-4.07L557.04-4.07L557.04-4.07Q551.37-9.74 551.37-20.12L551.37-20.12L551.37-20.12Q551.37-36.27 560.14-46.12L560.14-46.12L560.14-46.12Q569.56-56.71 585.93-56.71L585.93-56.71L585.93-56.71Q596.10-56.71 601.13-52.43L601.13-52.43L601.13-52.43Q604.87-49.22 604.87-43.98L604.87-43.98L604.87-43.98Q604.87-25.14 572.34-25.14L572.34-25.14L572.34-25.14Q571.91-22.36 571.91-20.01L571.91-20.01L571.91-20.01Q571.91-15.09 574.11-13.21L574.11-13.21L574.11-13.21Q576.30-11.34 580.37-11.34L580.37-11.34L580.37-11.34Q584.43-11.34 588.77-13.21L588.77-13.21L588.77-13.21Q593.10-15.09 594.92-18.08ZM573.09-29.75L573.09-29.75L573.09-29.75Q580.69-29.75 585.08-34.45L585.08-34.45L585.08-34.45Q589.46-38.95 589.46-46.12L589.46-46.12L589.46-46.12Q589.46-48.58 588.55-49.92L588.55-49.92L588.55-49.92Q587.64-51.25 585.82-51.25L585.82-51.25L585.82-51.25Q584.01-51.25 582.45-50.56L582.45-50.56L582.45-50.56Q580.90-49.86 579.30-47.51L579.30-47.51L579.30-47.51Q575.34-42.16 573.09-29.75ZM640.50-37.56L640.50-37.56L640.50-37.56Q642-41.52 642-44.94L642-44.94L642-44.94Q642-51.25 636.86-51.25L636.86-51.25L636.86-51.25Q634.19-51.25 632.00-48.85L632.00-48.85L632.00-48.85Q629.80-46.44 629.80-43.44L629.80-43.44L629.80-43.44Q629.80-41.30 631.51-39.59L631.51-39.59L631.51-39.59Q633.97-37.24 640.29-33.38L640.29-33.38L640.29-33.38Q646.60-29.53 649.01-26.38L649.01-26.38L649.01-26.38Q651.42-23.22 651.42-18.89L651.42-18.89L651.42-18.89Q651.42-14.55 649.33-10.59L649.33-10.59L649.33-10.59Q647.24-6.63 643.50-3.85L643.50-3.85L643.50-3.85Q635.47 2.14 622.63 2.14L622.63 2.14L622.63 2.14Q615.68 2.14 610.33-1.50L610.33-1.50L610.33-1.50Q604.98-5.03 604.98-9.20L604.98-9.20L604.98-9.20Q604.98-13.38 608.03-15.84L608.03-15.84L608.03-15.84Q611.08-18.30 615.57-18.30L615.57-18.30L615.57-18.30Q620.06-18.30 622.85-16.59L622.85-16.59L622.85-16.59Q621.46-13.05 621.46-10.70L621.46-10.70L621.46-10.70Q621.46-3.64 627.45-3.64L627.45-3.64L627.45-3.64Q630.02-3.64 631.73-5.24L631.73-5.24L631.73-5.24Q633.44-6.85 633.44-9.63L633.44-9.63L633.44-9.63Q633.44-15.09 624.24-20.86L624.24-20.86L624.24-20.86Q616.75-25.79 615.04-27.71L615.04-27.71L615.04-27.71Q612.15-31.14 612.15-35.42L612.15-35.42L612.15-35.42Q612.15-39.70 614.18-43.76L614.18-43.76L614.18-43.76Q616.21-47.83 619.96-50.72L619.96-50.72L619.96-50.72Q627.77-56.71 641.36-56.71L641.36-56.71L641.36-56.71Q648.31-56.71 652.43-53.93L652.43-53.93L652.43-53.93Q656.55-51.15 656.55-46.44L656.55-46.44L656.55-46.44Q656.55-41.73 653.72-39.05L653.72-39.05L653.72-39.05Q650.88-36.38 645.74-36.38L645.74-36.38L645.74-36.38Q642.21-36.38 640.50-37.56ZM656.55-4.39L656.55-4.39L663.61-11.34L676.24-24.50L669.18-34.03L669.18-34.03Q667.57-36.06 666.29-37.77L666.29-37.77L666.29-37.77Q665.00-39.48 665.00-41.20L665.00-41.20L665.00-41.20Q665.00-42.91 665.54-44.41L665.54-44.41L665.54-44.41Q666.07-45.90 667.25-47.08L667.25-47.08L667.25-47.08Q669.71-49.76 673.99-49.97L673.99-49.97L690.79-25.89L669.61-4.07L669.61-4.07Q666.18-0.64 661.90-0.64L661.90-0.64L661.90-0.64Q660.30-0.64 658.75-1.60L658.75-1.60L658.75-1.60Q657.19-2.57 656.55-4.39ZM693.15-4.39L693.15-4.39L700.21-11.34L712.83-24.50L705.77-34.03L705.77-34.03Q704.17-36.06 702.88-37.77L702.88-37.77L702.88-37.77Q701.60-39.48 701.60-41.20L701.60-41.20L701.60-41.20Q701.60-42.91 702.13-44.41L702.13-44.41L702.13-44.41Q702.67-45.90 703.85-47.08L703.85-47.08L703.85-47.08Q706.31-49.76 710.59-49.97L710.59-49.97L727.39-25.89L706.20-4.07L706.20-4.07Q702.78-0.64 698.50-0.64L698.50-0.64L698.50-0.64Q696.89-0.64 695.34-1.60L695.34-1.60L695.34-1.60Q693.79-2.57 693.15-4.39Z" fill="#ccc"></path></g></g><style>text {
+  font-size: 64px;
+  font-family: Arial Black;
+  dominant-baseline: central;
+  text-anchor: middle;
+}</style></svg>
+          </h2>
+<!--          <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>-->
+<!--          <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>-->
+        </div>
+      </div>
+
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Terms & Conditions</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <a href="/tc"><button class="button"><span>Read More </span></button></a>
+
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">User Password change policy</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <a href="/policy0"><button class="button"><span>Read More </span></button></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Customer Rights</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <a href="/rights"><button class="button"><span>Read More </span></button></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Right to fair treatment policy</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <a href="/policy1"><button class="button"><span>Read More </span></button></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Right to transparency, fair and honest dealing policy</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <a href="/policy2"><button class="button"><span>Read More </span></button></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Right to suitability policy</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <a href="/policy3"><button class="button"><span>Read More </span></button></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Right to grievance redressal and compensation policy</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <a href="/policy4"><button class="button"><span>Read More </span></button></a>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-layer"></i></div>
+              <h4 class="title"><a href="">Right to privacy policy</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <a href="/policy5"><button class="button"><span>Read More </span></button></a>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Icon Boxes Section -->
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/features1/assets/vendor/aos/aos.js"></script>
+  <script src="static/features1/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/features1/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/features1/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/features1/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/features1/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/features1/assets/js/main.js"></script>
+
+</body>
+
+</html>

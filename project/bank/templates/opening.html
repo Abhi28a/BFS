@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+{% load static %}
+<head>
+	<title>index</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+
+		#video-wrapper {
+			position: relative;
+			padding-bottom: 56.25%; /* 16:9 aspect ratio */
+			height: 0;
+			overflow: hidden;
+			background-color: black;
+		}
+
+		#video-wrapper video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		#video-wrapper button {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 10px;
+			background-color: rgba(255, 255, 255, 0.5);
+			border: none;
+			color: black;
+			font-size: 24px;
+			opacity: 0;
+			transition: opacity 0.3s ease-in-out;
+			cursor: pointer;
+		}
+
+		#video-wrapper:hover button {
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="video-wrapper">
+		<video src="{% static 'open.mp4' %}" playsinline autoplay loop></video>
+	</div>
+</body>
+</html>
