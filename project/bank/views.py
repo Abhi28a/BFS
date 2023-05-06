@@ -104,7 +104,7 @@ def eduloan(request):
         eloan.reqamount = reqamount
         eloan.annualincome = annualincome
         eloan.save()
-        return redirect('smsg')
+        return redirect('upload')
     return render(request, "eduloan.html")
 
 def goldloan(request):
@@ -133,7 +133,7 @@ def goldloan(request):
         gloan.reqamount=reqamount
         gloan.annualincome=annualincome
         gloan.save()
-        return redirect('smsg')
+        return redirect('upload')
     return render(request,"goldloan.html")
 
 def theme(request):
@@ -168,7 +168,7 @@ def homeloan(request):
         hloan.reqamount = reqamount
         hloan.annualincome = annualincome
         hloan.save()
-        return redirect('smsg')
+        return redirect('upload')
     return render(request, "homeloan.html")
 
 def personalloan(request):
@@ -197,7 +197,7 @@ def personalloan(request):
         ploan.reqamount=reqamount
         ploan.annualincome=annualincome
         ploan.save()
-        return redirect('smsg')
+        return redirect('upload')
     return render(request,"personalloan.html")
 
 def feedback(request):
@@ -226,8 +226,6 @@ def upload(request):
         u.save()
         return redirect('smsg')
     return render(request,"upload.html")
-
-
 
 def crypto(request):
     return render(request,"crypto.html")
