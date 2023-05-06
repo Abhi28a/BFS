@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-t!tm-q!!a6b0ng00@mwhbzx9i5(b4!=murbzp%41l)4h%qp^+3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -146,6 +146,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_HOST_USER = 'abhisheksaggam@outlook.com'
 # EMAIL_HOST_PASSWORD = 'Arysjohn@2003'
 
-SESSION_COOKIE_AGE=70
+SESSION_COOKIE_AGE=20
 SESSION_SAVE_EVERY_REQUEST=True
 

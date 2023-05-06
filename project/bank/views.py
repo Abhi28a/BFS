@@ -66,26 +66,26 @@ def userpolicy(request):
     return render(request,"userpolicy.html")
 
 def policy0(request):
-    filepath=os.path.join('static','policy0.pdf')
+    filepath=os.path.join('../static', 'policy0.pdf')
     return FileResponse(open(filepath,'rb'),content_type='application/pdf')
 
 def policy1(request):
     return render(request,"policy1.html")
 
 def policy2(request):
-    filepath = os.path.join('static', 'policy2.pdf')
+    filepath = os.path.join('../static', 'policy2.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def policy3(request):
-    filepath = os.path.join('static', 'policy3.pdf')
+    filepath = os.path.join('../static', 'policy3.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def policy4(request):
-    filepath = os.path.join('static', 'policy4.pdf')
+    filepath = os.path.join('../static', 'policy4.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def policy5(request):
-    filepath = os.path.join('static', 'policy5.pdf')
+    filepath = os.path.join('../static', 'policy5.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def calculator(request):
@@ -217,11 +217,11 @@ def feedback(request):
     return render(request,"feedback.html")
 
 def rights(request):
-    filepath = os.path.join('static', 'rights.pdf')
+    filepath = os.path.join('../static', 'rights.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def tc(request):
-    filepath = os.path.join('static', 't&c.pdf')
+    filepath = os.path.join('../static', 't&c.pdf')
     return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def smsg(request):
